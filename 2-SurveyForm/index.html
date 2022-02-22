@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Employer Survey Form</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="icon" type="image/x-icon" href="../SharedResources/favicon.ico">
+  </head>
+  <body>
+    <div id="container">
+      <header id="survey-header">
+        <h1 id="title">Employer Survey Form</h1>
+        <p id="description">Thank you for taking the time to fill out this form!</p>
+      </header>
+
+      <form id="survey-form">
+        <!-- "name"=value -->
+        <div class="form-group">
+          <label for="name" id="name-label">Name</label>
+          <input id="name" type="text" class="input-text" placeholder="John Doe" name="name" required>
+        </div>
+
+        <!-- "email"=value -->
+        <div class="form-group">
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" class="input-text" placeholder="johndoe@example.com" name="email" required>
+        </div>
+
+        <!-- "age"=value -->
+        <div class="form-group">
+          <label for="number" id="number-label">Age (optional)</label>
+          <input id="number" type="number" class="input-text" name="age" min="18" max="99">
+        </div>
+
+        <!-- "employee-quality"=value -->
+        <div class="form-group">
+          <label for="employee-quality">What quality are you most looking for in a potential employee?</label>
+          <select id="employee-quality" name="employee-quality" class="input-text">
+            <option value="" disabled selected>Choose your answer</option>
+            <option value="confidence">Confidence</option>
+            <option value="communication-skills">Communication skills</option>
+            <option value="work-experience">Work experience</option>
+            <option value="curiosity">Curiosity</option>
+            <option value="creativity">Creativity</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <!-- "hire-me"=value -->
+        <div class="form-group">
+          <p>Would you consider hiring me?</p>
+          <label><input type="radio" name="hire-me" value="yes" class="input-radio"  checked>Yes</label>
+          <label><input type="radio" name="hire-me" value="maybe" class="input-radio">Let me think about it (maybe)</label>
+          <label><input type="radio" name="hire-me" value="no" class="input-radio">I'll get back to you (no)</label>
+        </div>
+
+        <!-- "benefits"=value -->
+        <div class="form-group">
+          <p>What benefits does your company offer? (check all that apply)</p>
+          <label><input type="checkbox" name="benefits" value="4day-week" class="input-checkbox">4-day workweek</label>
+          <label><input type="checkbox" name="benefits" value="bonuses" class="input-checkbox">Bonuses</label>
+          <label><input type="checkbox" name="benefits" value="remote-work" class="input-checkbox">Remote working</label>
+          <label><input type="checkbox" name="benefits" value="social-events" class="input-checkbox">Social events</label>
+          <label><input type="checkbox" name="benefits" value="health-dental" class="input-checkbox">Health/dental insurance</label>
+          <label><input type="checkbox" name="benefits" value="others" class="input-checkbox">Others</label>
+        </div>
+
+        <!-- "comments"=value -->
+        <div class="form-group">
+          <label for="comments">Any comments or feedback?</label>
+          <textarea id="comments" name="comments" class="input-textarea" placeholder="Tell me what you think..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" id="submit" class="submit-button" value="Submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

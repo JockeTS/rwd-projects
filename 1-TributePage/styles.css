@@ -1,0 +1,53 @@
+@font-face {
+   font-family: familyGuyFont;
+   src: url(familyGuyFont.TTF);
+}
+
+body {
+  text-align: center;
+  background-color: #eee;
+}
+
+#main {
+  max-width: 600px;
+  margin: 16px auto;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+#title {
+  margin-bottom: 0px;
+  font-family: familyGuyFont;
+}
+
+#tagline {
+  font-weight: bold;
+}
+
+.part {
+  background-color: #9db3c9;
+  margin: 16px auto;
+  padding: 4px 0px;
+  border-radius: 8px;
+}
+
+#img-caption {
+  font-style: italic;
+}
+
+ul {
+  text-align: left;
+  line-height: 1.4;
+}
+
+li {
+  margin: 16px;
+}
+
+#quotes li {
+  font-style: italic;
+}
+
+#external-link {
+  margin-top: 32px;
+}
